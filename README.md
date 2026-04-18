@@ -18,7 +18,7 @@ Based on the web application interface, the seamless user journey involves:
 Sellers select a file locally (e.g., Ders5.pdf). The app generates a SHA-256 hash locally—meaning the file never leaves the user's computer—and registers the hash on-chain with a set price (e.g., 1 XLM) and description.
 
 <p align="center">
-  <img src="rise-in-contract/screenshots/01-register-content.png" alt="Register Content" width="800"/>
+  <img src="screenshots/01-register-content.png" alt="Register Content" width="800"/>
 </p>
 
 After registration, the content hash is generated and stored on-chain:
