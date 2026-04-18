@@ -3,7 +3,7 @@
 A smart contract running on Stellar Soroban that enables the secure sale of digital content through a hash-based content verification and escrow system.
 
 ## 🎬 Demo Video
- https://www.loom.com/share/f5a501b177a44c7189e2c8e3c19c388c
+ https://www.loom.com/share/5ac201f53c6d412d9f55ed3604c28129
 
 ## 🎯 Project Overview
 
