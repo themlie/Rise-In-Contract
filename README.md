@@ -3,7 +3,7 @@
 A smart contract running on Stellar Soroban that enables the secure sale of digital content through a hash-based content verification and escrow system.
 
 ## 🎬 Demo Video
-
+Video Linki
 [![Watch the Demo](https://cdn.loom.com/sessions/thumbnails/f5a501b177a44c7189e2c8e3c19c388c-with-play.gif)](https://www.loom.com/share/f5a501b177a44c7189e2c8e3c19c388c)
 
 ## 🎯 Project Overview
