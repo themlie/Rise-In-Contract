@@ -2,6 +2,10 @@
 
 A smart contract running on Stellar Soroban that enables the secure sale of digital content through a hash-based content verification and escrow system.
 
+## 🎬 Demo Video
+
+[![Watch the Demo](https://cdn.loom.com/sessions/thumbnails/f5a501b177a44c7189e2c8e3c19c388c-with-play.gif)](https://www.loom.com/share/f5a501b177a44c7189e2c8e3c19c388c)
+
 ## 🎯 Project Overview
 
 Rise In is a blockchain solution that provides security and transparency in the sale of digital content (code, documents, data). Files are never uploaded to the blockchain; only their SHA-256 hashes are recorded. This ensures:- ✅ **Privacy**: Content is not visible on the blockchain
