@@ -51,6 +51,32 @@ impl RiseInContract {
         Storage::get_content(&env, &content_hash).ok_or(Error::ContentNotFound)
     }
 
+    pub fn delete_content(
+        env: Env,
+        seller: Address,
+        content_hash: BytesN<32>,
+    ) -> Result<(), Error> {
+        seller.require_auth();
+
+        // Content var mı kontrol et
+        let content = Storage::get_content(&env, &content_hash)
+            .ok_or(Error::ContentNotFound)?;
+
+        // Sadece kendi içeriğini silebilir
+        if content.seller != seller {
+            return Err(Error::Unauthorized);
+        }
+
+        Storage::delete_content(&env, &content_hash);
+
+        env.events().publish(
+            (String::from_str(&env, "content_deleted"), seller),
+            content_hash,
+        );
+
+        Ok(())
+    }
+
     // ==================== ESCROW ====================
 
     pub fn create_escrow(

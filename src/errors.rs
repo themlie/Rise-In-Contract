@@ -34,4 +34,7 @@ pub enum Error {
     
     /// Invalid price (must be greater than 0)
     InvalidPrice = 10,
+
+    /// Content has active escrows and cannot be deleted
+    ContentHasActiveEscrows = 11,
 }

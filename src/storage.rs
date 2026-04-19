@@ -30,6 +30,11 @@ impl Storage {
         env.storage().persistent().has(&key)
     }
 
+    pub fn delete_content(env: &Env, content_hash: &BytesN<32>) {
+        let key = StorageKey::Content(content_hash.clone());
+        env.storage().persistent().remove(&key);
+    }
+
     // ==================== ESCROW ====================
 
     pub fn save_escrow(env: &Env, escrow: &EscrowAgreement) {
